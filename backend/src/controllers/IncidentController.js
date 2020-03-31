@@ -10,7 +10,7 @@ module.exports = {
             .join('ongs', 'ongs.id', '=', 'incidents.ong_id')
             .limit(5)
             .offset( (page -1) * 5)
-            .select('*')
+            //.select('*')
             .select([
                 'incidents.*',
                 'ongs.name',
