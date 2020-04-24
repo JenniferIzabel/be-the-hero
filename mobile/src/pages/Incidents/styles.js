@@ -1,12 +1,9 @@
 import { StyleSheet } from 'react-native';
 import Constants from 'expo-constants';
+import {general, colors} from '../../styles';
 
 export default StyleSheet.create ({
-    container: {
-        flex: 1,
-        paddingHorizontal: 24,
-        paddingTop: Constants.statusBarHeight +20,
-    },
+    container: general.container,
 
     header: {
         flexDirection: 'row',
@@ -16,7 +13,7 @@ export default StyleSheet.create ({
 
     headerText: {
         fontSize: 15,
-        color: '#737380',
+        color: colors.detachSubText,
     },
 
     headerTextBold: {
@@ -27,14 +24,14 @@ export default StyleSheet.create ({
         fontSize: 30,
         marginBottom: 16,
         marginTop: 48,
-        color: '#13131a',
+        color: colors.mainText,
         fontWeight: 'bold'
     },
 
     description: {
         fontSize: 16,
         lineHeight: 24,
-        color: '#737380'
+        color: colors.subText
     },
     
     incidentList: {
@@ -44,13 +41,13 @@ export default StyleSheet.create ({
     incident: {
         padding: 24,
         borderRadius: 8,
-        backgroundColor: '#FFF',
+        backgroundColor: colors.boxBackground,
         marginBottom: 16,
     },
 
     incidentProperty: {
         fontSize: 14,
-        color: '#41414d',
+        color: colors.mainText,
         fontWeight: 'bold'
     },
 
@@ -58,7 +55,7 @@ export default StyleSheet.create ({
         marginTop: 8,
         fontSize: 15,
         marginBottom: 24,
-        color: '#737380'
+        color: colors.subText
     },
 
     detailsButton: {
@@ -68,8 +65,12 @@ export default StyleSheet.create ({
     },
 
     detailsButtonText: {
-        color: '#E02041',
+        color: colors.link,
         fontSize: 15,
         fontWeight: 'bold'
+    },
+
+    arrow: {
+        color: colors.link
     }
 });

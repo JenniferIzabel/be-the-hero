@@ -1,13 +1,9 @@
 import { StyleSheet } from 'react-native';
 import Constants from 'expo-constants';
-
+import {general, colors} from '../../styles';
 
 export default StyleSheet.create({
-    container: {
-        flex: 1,
-        paddingHorizontal: 24,
-        paddingTop: Constants.statusBarHeight +20,
-    },
+    container: general.container,
 
     header: {
         flexDirection: 'row',
@@ -15,17 +11,21 @@ export default StyleSheet.create({
         alignItems: 'center'
     },
 
+    back: {
+        color: colors.link
+    },
+
     incident: {
         padding: 24,
         borderRadius: 8,
-        backgroundColor: '#FFF',
+        backgroundColor: colors.boxBackground,
         marginBottom: 16,
         marginTop: 48
     },
 
     incidentProperty: {
         fontSize: 14,
-        color: '#41414d',
+        color: colors.mainText,
         fontWeight: 'bold',
         marginTop: 24
     },
@@ -33,26 +33,26 @@ export default StyleSheet.create({
     incidentValue: {
         marginTop: 8,
         fontSize: 15,
-        color: '#737380'
+        color: colors.subText
     },
 
     contactBox: {
         padding: 24,
         borderRadius: 8,
-        backgroundColor: '#FFF',
+        backgroundColor: colors.boxBackground,
         marginBottom: 16,
     },
 
     heroTitle: {
         fontWeight: 'bold',
         fontSize: 20,
-        color: '#13131a',
+        color: colors.detachText,
         lineHeight: 30
     },
 
     heroDescription: {
         fontSize: 15,
-        color: '#737380',
+        color: colors.detachSubText,
         marginTop: 16,
     },
 
@@ -63,7 +63,7 @@ export default StyleSheet.create({
     },
 
     action: {
-        backgroundColor: '#E02041',
+        backgroundColor: colors.button,
         borderRadius: 8,
         height: 50,
         width: '48%',
@@ -72,7 +72,7 @@ export default StyleSheet.create({
     },
 
     actionText: {
-        color: '#FFF',
+        color: colors.buttonText,
         fontSize: 15,
         fontWeight: 'bold'
     }
